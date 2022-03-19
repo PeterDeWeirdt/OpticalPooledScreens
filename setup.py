@@ -7,7 +7,7 @@ from os import path
 here = path.abspath(path.dirname(__file__))
 
 setup(
-    name='ops-lasagna',
+    name='ops',
     version='0.1',
     description='Analysis code for pooled optical screening.',  # Required
     # long_description=long_description,
