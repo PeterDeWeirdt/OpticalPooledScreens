@@ -4,6 +4,9 @@
 from setuptools import setup, find_packages
 from os import path
 
+with open('requirements.txt') as f:
+    required = f.read().splitlines()
+
 here = path.abspath(path.dirname(__file__))
 
 setup(
@@ -11,6 +14,7 @@ setup(
     version='0.1',
     description='Analysis code for pooled optical screening.',  # Required
     # long_description=long_description,
+    install_requires=required,
     url='http://github.com/blaineylab/opticalpooledscreens',
     author='blaineylab/feldman',  # Optional
     author_email='feldman@broadinstitute.org',
